@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "creatorapp",
+    "slug": "creatorapp",
+    "platforms": ["android", "ios"],
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
