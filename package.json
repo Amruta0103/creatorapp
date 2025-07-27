@@ -1,7 +1,7 @@
 {
   "name": "creatorapp",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
     "start": "concurrently \"cd backend && node index.js\" \"cd frontend && npx expo start \"",
     "dev": "concurrently \"cd backend && node index.js\" \"cd frontend && npx expo start --clear --non-interactive\""
@@ -12,5 +12,8 @@
   "description": "",
   "devDependencies": {
     "concurrently": "^9.2.0"
+  },
+  "dependencies": {
+    "expo": "^53.0.20"
   }
 }
