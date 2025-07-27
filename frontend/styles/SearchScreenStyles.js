@@ -1,35 +1,79 @@
-import { StyleSheet } from 'react-native';
+// frontend/styles/searchStyles.js
+import { StyleSheet } from "react-native";
+import { COLORS, SIZES } from "./theme";
 
-const SearchScreenStyles = StyleSheet.create({
-  container: { flex: 1, padding: 12, backgroundColor: '#fff', justifyContent:'center', flexWrap: 'wrap' },
+export default StyleSheet.create({
+  container: {
+    display: 'flex',
+    gap: 10,
+    justifyContent: 'center',
+    alignItems: 'stretch',
+    backgroundColor: COLORS.primaryLight,
+    maxHeight: '95%'
+  },
   search: {
     borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 8,
-    paddingHorizontal: 10,
-    paddingVertical: 8,
-    marginBottom: 12,
+    borderColor: "#ddd",
+    backgroundColor: "#fff",
+    borderRadius: 25,
+    paddingHorizontal: 15,
+    paddingVertical: 4,
+    margin: 16,
+    fontSize: 16,
   },
-  card: {
-    width: '50%',
-    flexDirection: 'row',
+  filterContainer: {
+    flexDirection: "row",
+    height: 36,
+    marginHorizontal: 8,
+    marginVertical: 6,
+  },
+  chip: {
+    display: 'flex',
+    justifyContent: 'center',
     alignItems: 'center',
-    padding: 12,
-    backgroundColor: '#f9f9f9',
-    borderRadius: 10,
-    marginBottom: 10,
-    elevation: 2, // adds shadow on Android
-    shadowColor: '#000', // shadow for iOS
-    shadowOpacity: 0.1,
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 5,
+    minWidth: 25,
+    backgroundColor: COLORS.surface,
+    paddingHorizontal: 14,
+    borderRadius: 12,
+    marginRight: 10,
+    maxHeight: 36,
+    alignContent: 'center',
   },
-  avatar: { width: 60, height: 60, borderRadius: 30, marginRight: 12 },
-  info: { flex: 1 },
-  name: { fontSize: 16, fontWeight: 'bold' },
-  category: { fontSize: 14, color: '#666' },
-  followers: { fontSize: 13, color: '#888' },
-  emptyText: { textAlign: 'center', color: '#666', marginTop: 20 },
+  chipSelected: {
+    backgroundColor: COLORS.primary,
+    borderRadius: 12,
+  },
+  chipText: {
+    color: COLORS.textPrimary,
+  },
+  chipTextSelected: {
+    color: "#fff",
+  },
+  itemCard: {
+    backgroundColor: COLORS.cardBackground,
+    borderRadius: SIZES.radius,
+    padding: SIZES.padding,
+    marginBottom: 12,
+    marginHorizontal: 16,
+    flexDirection: "row",
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  itemImage: {
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    marginRight: 15,
+  },
+  itemName: {
+    fontWeight: "bold",
+    fontSize: 16,
+    color: COLORS.textPrimary,
+  },
+  itemCategory: {
+    color: COLORS.textSecondary,
+  },
 });
-
-export default SearchScreenStyles;

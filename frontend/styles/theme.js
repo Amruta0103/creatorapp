@@ -1,27 +1,24 @@
-// stylesheet.js
-const colors = {
-  primary: '#2596ff',     // Main blue
-  secondary: '#F7F8FA',   // Light gray background
-  card: '#fff',
-  text: '#222B45',
-  subText: '#8F9BB3',
-  shadow: '#DEE6EE',
-  lightBlue: '#EFF7FF',    // For highlights/cards
-  accent: '#19D7C4',
+
+export const COLORS = {
+  cardBackground: "#F4F4F6",
+  textPrimary: "#1F2937",
+  textSecondary: "#6B7280",
+  overlay: 'rgba(20,20,20,0.4)',
+  primary: 'rgba(225, 126, 83, 1)',
+  primaryLight: 'rgba(248, 187, 160, 1)',
+  accent: '#f8d691ff',
+  secondary: '#5E4B56',
+  background: '#FFFFFF',
+  surface: '#F5F5F5',
+  text: '#1F1F1F',
+  textLight: '#666666',
+
+  success: '#4CAF50',
+  error: '#F44336',
+  warning: '#FF9800',
 };
 
-const fonts = {
-  bold: '600',
-  regular: '400'
+export const SIZES = {
+  padding: 16,
+  radius: 12,
 };
-
-const spacing = {
-  sm: 8,
-  md: 16,
-  lg: 24,
-  xl: 32
-};
-
-const borderRadius = 16;
-
-export default { colors, fonts, spacing, borderRadius };

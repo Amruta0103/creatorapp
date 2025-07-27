@@ -2,9 +2,20 @@
   "expo": {
     "name": "creatorapp",
     "slug": "creatorapp",
-    "platforms": ["android", "ios"],
+    "platforms": [
+      "android",
+      "ios"
+    ],
     "web": {
       "bundler": "metro"
+    },
+    "android": {
+      "package": "com.amruta_d.creatorapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "429bda3c-e96d-4b10-a6ad-9186a6f2d83d"
+      }
     }
   }
 }
